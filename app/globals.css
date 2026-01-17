@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --forest-900: #3B4733;
+  --forest-700: #44503B;
+  --olive-700: #58614B;
+  --sage-300: #9FA58F;
+  --khaki-300: #9A906E;
+  --terra-500: #B07C54;
+  --sand-100: #F6F5F1;
+  --sand-200: #CCC8B7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-forest-900 font-body antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-heading;
+}
+
+/* Clean section spacing */
+section {
+  @apply relative;
+}
+
+/* Utility classes */
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-20 lg:py-28;
+  }
+
+  .section-title {
+    @apply font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-forest-900 mb-6;
+  }
+
+  .section-subtitle {
+    @apply text-lg lg:text-xl text-olive-700 max-w-2xl mx-auto;
+  }
+}
+
+/* Smooth scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--sage-300);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--olive-700);
+}
