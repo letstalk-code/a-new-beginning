@@ -43,7 +43,7 @@ export default function HomePage() {
         ctaText="Refer a Client Now"
         ctaHref="/for-referrers"
         secondaryCtaText="Call Us"
-        secondaryCtaHref="tel:+18135550123"
+        secondaryCtaHref="tel:+17272027307"
       />
     </>
   )

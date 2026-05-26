@@ -120,7 +120,7 @@ export default function OurHomesPage() {
         ctaText="Contact Us"
         ctaHref="/contact"
         secondaryCtaText="Call Now"
-        secondaryCtaHref="tel:+18135550123"
+        secondaryCtaHref="tel:+17272027307"
       />
     </>
   )

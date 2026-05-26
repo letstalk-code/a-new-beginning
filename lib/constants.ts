@@ -1,7 +1,7 @@
 export const SITE_NAME = 'A New Beginning Sober Living'
-export const PHONE_NUMBER = '(813) 555-0123'
-export const PHONE_LINK = 'tel:+18135550123'
-export const TEXT_LINK = 'sms:+18135550123'
+export const PHONE_NUMBER = '(727) 202-7307'
+export const PHONE_LINK = 'tel:+17272027307'
+export const TEXT_LINK = 'sms:+17272027307'
 export const EMAIL = 'info@anewbeginningsoberliving.com'
 export const EMAIL_LINK = 'mailto:info@anewbeginningsoberliving.com'
 
@@ -19,22 +19,22 @@ export const LOCATIONS = [
     name: 'Tampa',
     slug: 'tampa',
     description: 'Our flagship location in the heart of Tampa, offering structured sober living in a supportive community environment.',
-    address: '123 Recovery Lane, Tampa, FL 33601',
-    features: ['Private and shared rooms', 'Near public transit', 'Employment assistance'],
+    address: 'Tampa, FL — call for address',
+    features: ['Private and shared rooms', 'Near public transit', 'Daily meetings on-site or nearby'],
   },
   {
     name: 'St. Petersburg',
     slug: 'st-petersburg',
-    description: 'A peaceful coastal setting perfect for those seeking recovery near the waterfront with access to outdoor activities.',
-    address: '456 Serenity Street, St. Petersburg, FL 33701',
-    features: ['Beach proximity', 'Meditation garden', 'Group meeting space'],
+    description: 'A peaceful setting in St. Petersburg with access to meetings, recovery community, and outdoor activities.',
+    address: '1651 29th Ave N, St. Petersburg, FL 33713',
+    features: ['Established home since 2015', 'Community spaces', 'Meeting access'],
   },
   {
     name: 'New Port Richey',
     slug: 'new-port-richey',
     description: 'A quiet, residential setting ideal for building a strong foundation in early recovery.',
-    address: '789 Hope Avenue, New Port Richey, FL 34652',
-    features: ['Quiet neighborhood', 'Large common areas', 'Affordable rates'],
+    address: 'New Port Richey, FL — call for address',
+    features: ['Quiet neighborhood', 'Large common areas', 'Structured environment'],
   },
 ]
 
@@ -44,8 +44,8 @@ export const HERO_CONTENT = {
   ctaPrimary: 'Refer a Client Now',
   ctaSecondary: 'Call Us Today',
   trustChips: [
-    'FARR Certified',
-    'Insurance Accepted',
+    'Established 2015',
+    'Men & Women',
     'Same-Day Placement',
     '24/7 Support',
   ],
@@ -60,12 +60,12 @@ export const PROCESS_STEPS = [
   {
     number: 2,
     title: 'Quick Assessment',
-    description: 'We review the client\'s needs, verify insurance or payment, and confirm bed availability.',
+    description: 'We review the client\'s needs and recovery goals and confirm bed availability. We\'re a private-pay program — our admissions team walks through payment options on the call.',
   },
   {
     number: 3,
     title: 'Same-Day Move-In',
-    description: 'Once approved, clients can move in the same day. We handle the rest to make the transition seamless.',
+    description: 'Once approved, residents can move in the same day if they can arrive by 8:00 PM. No transportation? We can pick up from detox, the airport, or jail.',
   },
 ]
 
@@ -76,7 +76,7 @@ export const WHAT_WE_OFFER = [
   },
   {
     title: 'Recovery Support',
-    description: 'Connection to local AA/NA meetings, IOP programs, and peer support specialists.',
+    description: 'Daily meetings, connection to local AA/NA, and referrals to trusted IOP/PHP partners when residents need clinical care.',
   },
   {
     title: 'Life Skills Development',
@@ -113,20 +113,20 @@ export const HOME_EXPECTATIONS = [
     description: 'Wake-up times, chores, curfews, and accountability that builds healthy habits.',
   },
   {
-    title: 'Meeting Attendance',
-    description: 'Required weekly meeting attendance to support your recovery journey.',
+    title: 'Daily Meeting Attendance',
+    description: 'Residents attend a recovery meeting every day to stay connected and accountable.',
   },
   {
-    title: 'Employment or Program',
-    description: 'Residents must be working, in school, or attending IOP within 30 days.',
+    title: 'Curfew',
+    description: 'Curfew is 10:00 PM Sunday through Thursday and midnight on Friday and Saturday.',
   },
   {
     title: 'Drug Testing',
-    description: 'Regular random drug testing to maintain a safe, sober environment.',
+    description: 'Random drug testing twice per week — included at no extra cost.',
   },
   {
     title: 'House Participation',
-    description: 'Weekly house meetings and shared responsibilities build community.',
+    description: 'Shared responsibilities and respect for housemates build the kind of community that supports recovery.',
   },
   {
     title: 'Respect & Accountability',
@@ -159,20 +159,28 @@ export const TESTIMONIALS = [
 
 export const FAQS = [
   {
-    question: 'What is the cost of sober living?',
-    answer: 'Rates vary by location and room type, typically ranging from $150-$250 per week. We accept some insurance plans and offer payment plans for those who qualify.',
+    question: 'What does it cost?',
+    answer: 'Our admissions team handles pricing directly on the phone so they can match it to your situation. There\'s no move-in fee, and utilities and drug testing are included. Call (727) 202-7307 to talk it through.',
   },
   {
     question: 'Do you accept insurance?',
-    answer: 'Yes, we work with several insurance providers. Contact us to verify your coverage and learn about payment options.',
+    answer: 'We\'re a private-pay sober living program — we don\'t bill insurance directly. Our admissions team will walk through payment options when you call.',
   },
   {
     question: 'What is the minimum stay requirement?',
-    answer: 'We recommend a minimum of 90 days for the best outcomes, but we work with each resident individually based on their needs and circumstances.',
+    answer: 'We ask for a six-month commitment. Research and our own experience both show that longer stays in sober living produce much better recovery outcomes. After six months, residents can stay as long as they\'d like.',
   },
   {
     question: 'Are your homes co-ed?',
-    answer: 'We have separate homes for men and women to provide safe, focused recovery environments.',
+    answer: 'No — we have separate homes for men and women so each environment stays safe and focused on recovery.',
+  },
+  {
+    question: 'Do you accept residents on MAT (Suboxone or Naltrexone)?',
+    answer: 'Yes. We accept residents on Suboxone or Naltrexone. All medications are kept locked and staff assists with administration. We don\'t accept other opioids.',
+  },
+  {
+    question: 'Can you take same-day admissions?',
+    answer: 'Yes — same-day placement is available as long as the resident can arrive by 8:00 PM. If transportation is an issue, we can pick up from detox, the airport, or jail.',
   },
   {
     question: 'What happens if someone relapses?',
@@ -225,5 +233,7 @@ export const SEO_KEYWORDS = [
   'structured sober living Florida',
   'men\'s sober living Tampa',
   'women\'s sober living Tampa',
-  'FARR certified sober living',
+  'private pay sober living Florida',
+  'MAT friendly sober living',
+  'same day sober living admission',
 ]

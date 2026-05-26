@@ -23,8 +23,8 @@ const REFERRER_BENEFITS = [
     description: 'Regular updates on your client\'s progress and any concerns.',
   },
   {
-    title: 'Insurance Coordination',
-    description: 'We handle insurance verification and can work with most payment plans.',
+    title: 'Clinical Step-Down',
+    description: 'We refer residents who need clinical care out to trusted IOP/PHP partners like Windmoor and North Tampa Behavioral.',
   },
 ]
 
@@ -32,8 +32,8 @@ const WHAT_WE_NEED = [
   'Client name and contact information',
   'Referrer contact information',
   'Preferred location and move-in timeframe',
-  'Brief history and any special needs',
-  'Insurance information (if applicable)',
+  'Brief recovery history and any special needs',
+  'MAT status (we accept Suboxone and Naltrexone)',
 ]
 
 export default function ForReferrersPage() {

@@ -97,7 +97,7 @@ export default function Footer() {
               <Link href="/privacy" className="text-white/50 hover:text-white transition-colors">
                 Privacy Policy
               </Link>
-              <span className="text-terra-500 font-medium">FARR Certified</span>
+              <span className="text-terra-500 font-medium">Est. 2015</span>
             </div>
           </div>
         </div>

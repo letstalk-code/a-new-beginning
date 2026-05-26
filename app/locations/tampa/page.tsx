@@ -49,7 +49,7 @@ export default function TampaPage() {
               <Button href="/for-referrers" size="lg">
                 Refer to Tampa
               </Button>
-              <Button href="tel:+18135550123" variant="outline" size="lg">
+              <Button href="tel:+17272027307" variant="outline" size="lg">
                 Call for Availability
               </Button>
             </div>
@@ -142,7 +142,7 @@ export default function TampaPage() {
         ctaText="Submit Referral"
         ctaHref="/for-referrers"
         secondaryCtaText="Call Now"
-        secondaryCtaHref="tel:+18135550123"
+        secondaryCtaHref="tel:+17272027307"
       />
 
       <ContactPanel />

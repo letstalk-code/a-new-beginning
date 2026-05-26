@@ -7,7 +7,7 @@ import ContactPanel from '@/components/sections/ContactPanel'
 
 export const metadata: Metadata = {
   title: 'Admissions | A New Beginning Sober Living',
-  description: 'Learn about our admissions process. We accept most insurance and offer flexible payment plans. Same-day move-in available.',
+  description: 'Learn about our admissions process. Private-pay sober living for men and women in Tampa Bay. Same-day move-in available — arrive by 8 PM.',
 }
 
 const ADMISSION_REQUIREMENTS = [
@@ -21,7 +21,7 @@ const ADMISSION_REQUIREMENTS = [
   },
   {
     title: 'Financial Responsibility',
-    description: 'Ability to pay rent through insurance, self-pay, or approved payment plan.',
+    description: 'We\'re a private-pay program. Residents (or their family/sponsor) need to be able to cover weekly rent. Admissions will walk through pricing and options on the call.',
   },
   {
     title: 'Follow House Rules',
@@ -31,20 +31,20 @@ const ADMISSION_REQUIREMENTS = [
 
 const PAYMENT_OPTIONS = [
   {
-    title: 'Insurance',
-    description: 'We work with many insurance providers. Contact us to verify your coverage.',
+    title: 'Private Pay',
+    description: 'We\'re a private-pay sober living program. Admissions walks through pricing on the phone so it fits your situation.',
   },
   {
-    title: 'Self-Pay',
-    description: 'Weekly rates starting at $150. Pay weekly or monthly.',
+    title: 'No Move-In Fee',
+    description: 'No deposit or move-in fee. Utilities and weekly drug testing are included.',
   },
   {
-    title: 'Payment Plans',
-    description: 'We offer flexible payment plans for those who qualify.',
+    title: 'Weekly or Monthly',
+    description: 'Pay weekly or monthly — we\'ll work out a schedule that makes sense.',
   },
   {
-    title: 'Scholarships',
-    description: 'Limited scholarships available for those in financial need.',
+    title: 'Family & Sponsor Support',
+    description: 'Many families or sponsors help cover the cost of recovery housing. We can talk through how that works.',
   },
 ]
 
@@ -128,7 +128,7 @@ export default function AdmissionsPage() {
         ctaText="Start Your Application"
         ctaHref="/for-referrers"
         secondaryCtaText="Call Us Now"
-        secondaryCtaHref="tel:+18135550123"
+        secondaryCtaHref="tel:+17272027307"
       />
 
       <ContactPanel />
