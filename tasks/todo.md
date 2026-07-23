@@ -215,4 +215,13 @@ Full site reviewed in browser (desktop + mobile, all pages) + Lighthouse audit (
 
 **Files changed**: layout.tsx (metadata + Org schema + Analytics), page.tsx (FAQ schema, TrustBand), all 9 page files (page-hero + canonicals), HeroSection (rewrite), new TrustBand/Analytics/tracking/schema/robots/sitemap, Button/CalloutBanner/Footer/MobileBottomBar/LocationCards/ContactPanel (contrast + CTA), forms (lead events), tailwind (terra-700), globals.css (page-hero, fade-up), images regenerated. Deleted: SEOSection, hero-bg.png.
 
-**Not deployed** — run `vercel --prod` / push when ready. OG image URL resolves via metadataBase in production.
+**Deployed to production 2026-07-23** (https://a-new-beginning-chi.vercel.app, commits 5e1e32c + 1f2cf89).
+
+## Round 2 (2026-07-23, owner call): ads on hold, deploy now ✅
+- Ads/GA4 on hold (owner decision) — Analytics stays env-gated, activates whenever IDs are added
+- Real photos/testimonials on hold — TestimonialCarousel still parked
+- [x] Interactive map on /locations — tabbed Google Maps embed; St. Pete shows street address, Tampa/NPR city-level (resident privacy)
+- [x] Location pages deepened: exterior photo + unique "Sober Living in {City}, Florida" content section each (county, program rules, private-pay/MAT facts)
+- [x] AI imagery via Higgsfield Nano Banana Pro (user's unlimited plan): 3 exteriors + bedroom/living room/kitchen, compressed to ~300-680KB JPEGs in public/
+- [x] Our Homes photo gallery; location cards site-wide got photo headers
+- [x] Deployed both rounds to Vercel production
