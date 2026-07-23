@@ -19,6 +19,7 @@ export const LOCATIONS = [
   {
     name: 'Tampa',
     slug: 'tampa',
+    image: '/home-tampa.jpg',
     description: 'Our flagship location in the heart of Tampa, offering structured sober living in a supportive community environment.',
     address: 'Tampa, FL — call for address',
     features: ['Private and shared rooms', 'Near public transit', 'Daily meetings on-site or nearby'],
@@ -26,6 +27,7 @@ export const LOCATIONS = [
   {
     name: 'St. Petersburg',
     slug: 'st-petersburg',
+    image: '/home-st-petersburg.jpg',
     description: 'A peaceful setting in St. Petersburg with access to meetings, recovery community, and outdoor activities.',
     address: '1651 29th Ave N, St. Petersburg, FL 33713',
     features: ['Established home since 2015', 'Community spaces', 'Meeting access'],
@@ -33,6 +35,7 @@ export const LOCATIONS = [
   {
     name: 'New Port Richey',
     slug: 'new-port-richey',
+    image: '/home-new-port-richey.jpg',
     description: 'A quiet, residential setting ideal for building a strong foundation in early recovery.',
     address: 'New Port Richey, FL — call for address',
     features: ['Quiet neighborhood', 'Large common areas', 'Structured environment'],

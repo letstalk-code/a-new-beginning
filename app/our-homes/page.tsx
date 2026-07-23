@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Image from 'next/image'
 import AnimatedSection from '@/components/ui/AnimatedSection'
 import Card, { CardTitle, CardDescription } from '@/components/ui/Card'
 import LocationCards from '@/components/sections/LocationCards'
@@ -11,6 +12,24 @@ export const metadata: Metadata = {
   description: 'Tour our sober living homes in Tampa Bay. Clean, comfortable, and supportive environments designed to help you succeed in recovery.',
   alternates: { canonical: '/our-homes' },
 }
+
+const GALLERY = [
+  {
+    src: '/home-bedroom.jpg',
+    alt: 'Bright shared bedroom with two twin beds in a sober living home',
+    label: 'Comfortable Bedrooms',
+  },
+  {
+    src: '/home-living-room.jpg',
+    alt: 'Warm shared living room with sofas and natural light',
+    label: 'Shared Living Spaces',
+  },
+  {
+    src: '/home-kitchen.jpg',
+    alt: 'Clean shared kitchen and dining area with a large table',
+    label: 'Full Kitchens & Dining',
+  },
+]
 
 const AMENITIES = [
   {
@@ -55,6 +74,32 @@ export default function OurHomesPage() {
               with experienced house managers.
             </p>
           </AnimatedSection>
+        </div>
+      </section>
+
+      {/* Photo gallery */}
+      <section className="pb-16 lg:pb-24 bg-white">
+        <div className="container-custom">
+          <div className="grid md:grid-cols-3 gap-6">
+            {GALLERY.map((photo, index) => (
+              <AnimatedSection key={photo.src} delay={index * 0.05}>
+                <figure className="group">
+                  <div className="relative h-56 lg:h-64 rounded-xl overflow-hidden shadow-sm">
+                    <Image
+                      src={photo.src}
+                      alt={photo.alt}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                  <figcaption className="mt-3 text-center font-heading font-semibold text-forest-900">
+                    {photo.label}
+                  </figcaption>
+                </figure>
+              </AnimatedSection>
+            ))}
+          </div>
         </div>
       </section>
 

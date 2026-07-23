@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Image from 'next/image'
 import AnimatedSection from '@/components/ui/AnimatedSection'
 import Card, { CardTitle } from '@/components/ui/Card'
 import Button from '@/components/ui/Button'
@@ -59,6 +60,23 @@ export default function StPetersburgPage() {
               <Button href="tel:+17272027307" variant="outline" size="lg">
                 Call for Availability
               </Button>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* Home photo */}
+      <section className="pb-4 bg-white">
+        <div className="container-custom">
+          <AnimatedSection>
+            <div className="relative h-64 sm:h-80 lg:h-[420px] rounded-xl overflow-hidden shadow-sm max-w-5xl mx-auto">
+              <Image
+                src="/home-st-petersburg.jpg"
+                alt="Sober living home in St. Petersburg, Florida"
+                fill
+                sizes="(max-width: 1024px) 100vw, 1024px"
+                className="object-cover"
+              />
             </div>
           </AnimatedSection>
         </div>

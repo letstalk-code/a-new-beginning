@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import AnimatedSection from '@/components/ui/AnimatedSection'
 import Button from '@/components/ui/Button'
 import { LOCATIONS } from '@/lib/constants'
@@ -28,6 +29,17 @@ export default function LocationCards({
           {LOCATIONS.map((location, index) => (
             <AnimatedSection key={location.slug} delay={index * 0.1}>
               <div className="group bg-sand-100 h-full flex flex-col overflow-hidden hover:shadow-xl transition-all duration-300">
+                {/* Location photo */}
+                <div className="relative h-44 overflow-hidden">
+                  <Image
+                    src={location.image}
+                    alt={`Sober living home in ${location.name}, Florida`}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+
                 {/* Location header */}
                 <div className="bg-forest-900 p-6">
                   <h3 className="font-heading text-xl font-semibold text-white">
