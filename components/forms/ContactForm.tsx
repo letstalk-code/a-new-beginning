@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Button from '@/components/ui/Button'
 import FormSuccess from './FormSuccess'
 import { validateEmail, validatePhone } from '@/lib/utils'
+import { trackFormLead } from '@/lib/tracking'
 
 interface FormData {
   name: string
@@ -76,6 +77,7 @@ export default function ContactForm() {
 
       if (response.ok) {
         setIsSuccess(true)
+        trackFormLead('contact')
       }
     } catch {
       // Handle error silently for now

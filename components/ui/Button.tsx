@@ -24,7 +24,7 @@ interface ButtonAsLink extends BaseButtonProps, Omit<AnchorHTMLAttributes<HTMLAn
 type ButtonProps = ButtonAsButton | ButtonAsLink
 
 const variantStyles: Record<ButtonVariant, string> = {
-  primary: 'bg-terra-500 text-white hover:bg-terra-500/90 border-2 border-terra-500',
+  primary: 'bg-terra-700 text-white hover:bg-terra-700/90 border-2 border-terra-700',
   secondary: 'bg-forest-900 text-white hover:bg-forest-700 border-2 border-forest-900',
   outline: 'border-2 border-forest-900 text-forest-900 hover:bg-forest-900 hover:text-white bg-transparent',
   ghost: 'text-forest-900 hover:bg-forest-900/10 border-2 border-transparent',

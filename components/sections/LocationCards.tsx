@@ -56,9 +56,14 @@ export default function LocationCards({
                         size="sm"
                         className="flex-1 text-xs"
                       >
-                        Learn More
+                        About {location.name}
                       </Button>
-                      <Button href="/for-referrers" size="sm" className="flex-1 text-xs">
+                      <Button
+                        href="/for-referrers"
+                        size="sm"
+                        className="flex-1 text-xs"
+                        aria-label={`Refer a client to our ${location.name} home`}
+                      >
                         Refer Here
                       </Button>
                     </div>
@@ -73,7 +78,7 @@ export default function LocationCards({
           <AnimatedSection className="text-center mt-12" delay={0.3}>
             <Link
               href="/locations"
-              className="text-terra-500 hover:text-terra-500/80 font-semibold inline-flex items-center uppercase tracking-wide text-sm"
+              className="text-terra-700 hover:text-terra-700/80 font-semibold inline-flex items-center uppercase tracking-wide text-sm"
             >
               View All Locations
               <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

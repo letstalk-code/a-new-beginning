@@ -6,6 +6,7 @@ import Button from '@/components/ui/Button'
 import FormSuccess from './FormSuccess'
 import { REFERRER_TYPES, TIMEFRAMES, LOCATIONS } from '@/lib/constants'
 import { validateEmail, validatePhone } from '@/lib/utils'
+import { trackFormLead } from '@/lib/tracking'
 
 interface FormData {
   referrerType: string
@@ -111,6 +112,7 @@ export default function ReferralFastTrackWizard() {
 
       if (response.ok) {
         setIsSuccess(true)
+        trackFormLead('referral')
       }
     } catch {
       // Handle error silently for now

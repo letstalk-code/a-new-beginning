@@ -9,7 +9,7 @@ export default function MobileBottomBar() {
       <div className="grid grid-cols-3">
         <a
           href={PHONE_LINK}
-          className="flex flex-col items-center justify-center py-3 text-forest-900 hover:bg-gray-50 transition-colors"
+          className="flex flex-col items-center justify-center py-3 bg-terra-700 text-white hover:bg-terra-700/90 transition-colors"
         >
           <svg className="w-5 h-5 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path
@@ -39,7 +39,7 @@ export default function MobileBottomBar() {
 
         <Link
           href="/for-referrers"
-          className="flex flex-col items-center justify-center py-3 bg-terra-500 text-white hover:bg-terra-500/90 transition-colors"
+          className="flex flex-col items-center justify-center py-3 text-forest-900 hover:bg-gray-50 transition-colors"
         >
           <svg className="w-5 h-5 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path

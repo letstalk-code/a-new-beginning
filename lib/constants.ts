@@ -1,4 +1,5 @@
 export const SITE_NAME = 'A New Beginning Sober Living'
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://anewbeginningsoberliving.com'
 export const PHONE_NUMBER = '(727) 202-7307'
 export const PHONE_LINK = 'tel:+17272027307'
 export const TEXT_LINK = 'sms:+17272027307'

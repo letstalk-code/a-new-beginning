@@ -6,15 +6,16 @@ import ContactPanel from '@/components/sections/ContactPanel'
 import { LOCATIONS, PHONE_NUMBER, EMAIL } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Contact Us | A New Beginning Sober Living',
+  title: 'Contact Us',
   description: 'Contact A New Beginning Sober Living. Call, text, or email us for referrals, tours, or questions. Available 24/7.',
+  alternates: { canonical: '/contact' },
 }
 
 export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="py-16 lg:py-24 bg-gradient-to-b from-sand-100 to-white">
+      <section className="page-hero bg-gradient-to-b from-sand-100 to-white">
         <div className="container-custom">
           <AnimatedSection className="max-w-3xl mx-auto text-center">
             <h1 className="font-heading text-4xl sm:text-5xl font-bold text-forest-900 mb-6">
@@ -28,7 +29,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <ContactPanel />
+      <ContactPanel title="Reach Us Directly" subtitle="Call or text and a real person answers — 24 hours a day, 7 days a week." />
 
       {/* Contact Form Section */}
       <section className="py-16 lg:py-24 bg-sand-100">
@@ -106,7 +107,7 @@ export default function ContactPage() {
                       <span>Saturday - Sunday</span>
                       <span>9:00 AM - 5:00 PM</span>
                     </p>
-                    <p className="text-sm text-terra-500 mt-4">
+                    <p className="text-sm text-terra-700 mt-4">
                       * 24/7 emergency line available
                     </p>
                   </div>

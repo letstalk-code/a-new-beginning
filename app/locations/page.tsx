@@ -1,19 +1,21 @@
 import { Metadata } from 'next'
 import AnimatedSection from '@/components/ui/AnimatedSection'
 import LocationCards from '@/components/sections/LocationCards'
+import LocationMap from '@/components/sections/LocationMap'
 import CalloutBanner from '@/components/sections/CalloutBanner'
 import ContactPanel from '@/components/sections/ContactPanel'
 
 export const metadata: Metadata = {
-  title: 'Locations | A New Beginning Sober Living',
+  title: 'Sober Living Locations in Tampa Bay',
   description: 'Sober living homes throughout Tampa Bay including Tampa, St. Petersburg, and New Port Richey. Find the right location for your recovery.',
+  alternates: { canonical: '/locations' },
 }
 
 export default function LocationsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="py-16 lg:py-24 bg-gradient-to-b from-sand-100 to-white">
+      <section className="page-hero bg-gradient-to-b from-sand-100 to-white">
         <div className="container-custom">
           <AnimatedSection className="max-w-3xl mx-auto text-center">
             <h1 className="font-heading text-4xl sm:text-5xl font-bold text-forest-900 mb-6">
@@ -48,30 +50,7 @@ export default function LocationsPage() {
           </AnimatedSection>
 
           <AnimatedSection delay={0.1}>
-            <div className="bg-sand-100 rounded-xl h-80 flex items-center justify-center">
-              <div className="text-center">
-                <svg
-                  className="w-16 h-16 mx-auto mb-4 text-sage-300"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1.5}
-                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1.5}
-                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                  />
-                </svg>
-                <p className="text-olive-700">Interactive map coming soon</p>
-              </div>
-            </div>
+            <LocationMap />
           </AnimatedSection>
         </div>
       </section>

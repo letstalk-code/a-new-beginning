@@ -3,13 +3,14 @@ import AnimatedSection from '@/components/ui/AnimatedSection'
 import { SITE_NAME, EMAIL } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | A New Beginning Sober Living',
+  title: 'Privacy Policy',
   description: 'Privacy policy for A New Beginning Sober Living. Learn how we collect, use, and protect your personal information.',
+  alternates: { canonical: '/privacy' },
 }
 
 export default function PrivacyPage() {
   return (
-    <section className="py-16 lg:py-24">
+    <section className="page-hero">
       <div className="container-custom">
         <AnimatedSection className="max-w-3xl mx-auto">
           <h1 className="font-heading text-4xl font-bold text-forest-900 mb-8">

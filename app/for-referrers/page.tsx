@@ -5,8 +5,9 @@ import ReferralFastTrackWizard from '@/components/forms/ReferralFastTrackWizard'
 import ContactPanel from '@/components/sections/ContactPanel'
 
 export const metadata: Metadata = {
-  title: 'For Referrers | A New Beginning Sober Living',
+  title: 'Refer a Client — Fast Sober Living Placement',
   description: 'Fast, easy referral process for treatment centers, hospitals, case managers, and families. Same-day placement available. Submit a referral online or call us now.',
+  alternates: { canonical: '/for-referrers' },
 }
 
 const REFERRER_BENEFITS = [
@@ -40,7 +41,7 @@ export default function ForReferrersPage() {
   return (
     <>
       {/* Hero */}
-      <section className="py-16 lg:py-24 bg-gradient-to-b from-sand-100 to-white">
+      <section className="page-hero bg-gradient-to-b from-sand-100 to-white">
         <div className="container-custom">
           <AnimatedSection className="max-w-3xl mx-auto text-center mb-12">
             <h1 className="font-heading text-4xl sm:text-5xl font-bold text-forest-900 mb-6">

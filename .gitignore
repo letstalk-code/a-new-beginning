@@ -27,3 +27,10 @@ next-env.d.ts
 
 # Vercel CLI link
 .vercel
+
+# Local workspace files (not part of the site)
+.claude/worktrees/
+Ai knowledge/
+client-questions*.pdf
+paystub_*
+excalidraw.log

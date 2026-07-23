@@ -41,7 +41,7 @@ export default function ContactPanel({
                 </svg>
               </div>
               <h3 className="font-heading font-semibold text-forest-900 mb-1">Call Us</h3>
-              <p className="text-terra-500 font-medium">{PHONE_NUMBER}</p>
+              <p className="text-terra-700 font-medium">{PHONE_NUMBER}</p>
             </a>
           </AnimatedSection>
 
@@ -61,7 +61,7 @@ export default function ContactPanel({
                 </svg>
               </div>
               <h3 className="font-heading font-semibold text-forest-900 mb-1">Text Us</h3>
-              <p className="text-terra-500 font-medium">{PHONE_NUMBER}</p>
+              <p className="text-terra-700 font-medium">{PHONE_NUMBER}</p>
             </a>
           </AnimatedSection>
 
@@ -81,7 +81,7 @@ export default function ContactPanel({
                 </svg>
               </div>
               <h3 className="font-heading font-semibold text-forest-900 mb-1">Email Us</h3>
-              <p className="text-terra-500 font-medium text-sm">{EMAIL}</p>
+              <p className="text-terra-700 font-medium text-sm">{EMAIL}</p>
             </a>
           </AnimatedSection>
         </div>

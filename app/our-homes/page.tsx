@@ -7,8 +7,9 @@ import CalloutBanner from '@/components/sections/CalloutBanner'
 import { HOME_EXPECTATIONS } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Our Homes | A New Beginning Sober Living',
+  title: 'Our Homes — Structured Recovery Housing',
   description: 'Tour our sober living homes in Tampa Bay. Clean, comfortable, and supportive environments designed to help you succeed in recovery.',
+  alternates: { canonical: '/our-homes' },
 }
 
 const AMENITIES = [
@@ -42,7 +43,7 @@ export default function OurHomesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="py-16 lg:py-24 bg-gradient-to-b from-sand-100 to-white">
+      <section className="page-hero bg-gradient-to-b from-sand-100 to-white">
         <div className="container-custom">
           <AnimatedSection className="max-w-3xl mx-auto text-center">
             <h1 className="font-heading text-4xl sm:text-5xl font-bold text-forest-900 mb-6">

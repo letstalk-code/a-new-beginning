@@ -24,6 +24,7 @@ const config: Config = {
         },
         terra: {
           500: '#B07C54',
+          700: '#8A5F3D',
         },
         sand: {
           100: '#F6F5F1',

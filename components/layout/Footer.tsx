@@ -34,9 +34,9 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-heading font-semibold text-sm uppercase tracking-wider mb-6 text-white">
+            <h3 className="font-heading font-semibold text-sm uppercase tracking-wider mb-6 text-white">
               Quick Links
-            </h4>
+            </h3>
             <ul className="space-y-3">
               {FOOTER_LINKS.quickLinks.map((link) => (
                 <li key={link.href}>
@@ -53,9 +53,9 @@ export default function Footer() {
 
           {/* Locations */}
           <div>
-            <h4 className="font-heading font-semibold text-sm uppercase tracking-wider mb-6 text-white">
+            <h3 className="font-heading font-semibold text-sm uppercase tracking-wider mb-6 text-white">
               Our Locations
-            </h4>
+            </h3>
             <ul className="space-y-3">
               {FOOTER_LINKS.locations.map((link) => (
                 <li key={link.href}>
@@ -72,15 +72,15 @@ export default function Footer() {
 
           {/* Get Help */}
           <div>
-            <h4 className="font-heading font-semibold text-sm uppercase tracking-wider mb-6 text-white">
+            <h3 className="font-heading font-semibold text-sm uppercase tracking-wider mb-6 text-white">
               Get Help Now
-            </h4>
+            </h3>
             <p className="text-white/70 text-sm mb-6 leading-relaxed">
               Ready to take the next step? We&apos;re here 24/7 to help.
             </p>
             <Link
               href="/for-referrers"
-              className="inline-block bg-terra-500 text-white px-6 py-3 font-semibold text-sm uppercase tracking-wider hover:bg-terra-500/90 transition-colors"
+              className="inline-block bg-terra-700 text-white px-6 py-3 font-semibold text-sm uppercase tracking-wider hover:bg-terra-700/90 transition-colors"
             >
               Refer a Client
             </Link>
@@ -90,14 +90,14 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-white/10">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-            <p className="text-white/50 text-sm">
+            <p className="text-white/70 text-sm">
               &copy; {currentYear} A New Beginning Sober Living. All rights reserved.
             </p>
             <div className="flex items-center gap-6 text-sm">
-              <Link href="/privacy" className="text-white/50 hover:text-white transition-colors">
+              <Link href="/privacy" className="text-white/70 hover:text-white transition-colors">
                 Privacy Policy
               </Link>
-              <span className="text-terra-500 font-medium">Est. 2015</span>
+              <span className="text-sand-200 font-medium">Est. 2015</span>
             </div>
           </div>
         </div>

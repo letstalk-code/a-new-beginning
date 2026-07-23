@@ -1,15 +1,38 @@
+import { Metadata } from 'next'
 import HeroSection from '@/components/sections/HeroSection'
 import ProcessSteps from '@/components/sections/ProcessSteps'
 import InfoCardsGrid from '@/components/sections/InfoCardsGrid'
-import TestimonialCarousel from '@/components/sections/TestimonialCarousel'
+import TrustBand from '@/components/sections/TrustBand'
 import LocationCards from '@/components/sections/LocationCards'
 import FAQAccordion from '@/components/sections/FAQAccordion'
 import CalloutBanner from '@/components/sections/CalloutBanner'
-import { WHAT_WE_OFFER, WHO_WE_HELP } from '@/lib/constants'
+import { WHAT_WE_OFFER, WHO_WE_HELP, FAQS } from '@/lib/constants'
+
+export const metadata: Metadata = {
+  alternates: { canonical: '/' },
+}
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQS.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer,
+    },
+  })),
+}
 
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
       <HeroSection />
 
       <ProcessSteps />
@@ -33,7 +56,7 @@ export default function HomePage() {
         background="white"
       />
 
-      <TestimonialCarousel />
+      <TrustBand />
 
       <FAQAccordion />
 

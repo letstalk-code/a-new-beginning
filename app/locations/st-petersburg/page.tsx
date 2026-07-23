@@ -5,10 +5,12 @@ import Button from '@/components/ui/Button'
 import ContactPanel from '@/components/sections/ContactPanel'
 import CalloutBanner from '@/components/sections/CalloutBanner'
 import { LOCATIONS } from '@/lib/constants'
+import { localBusinessSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
-  title: 'St. Petersburg Sober Living | A New Beginning',
+  title: 'Sober Living in St. Petersburg, FL',
   description: 'Sober living near the beach in St. Petersburg, FL. Peaceful recovery environment with outdoor activities and meditation spaces. Same-day placement available.',
+  alternates: { canonical: '/locations/st-petersburg' },
 }
 
 const location = LOCATIONS.find((l) => l.slug === 'st-petersburg')!
@@ -32,11 +34,16 @@ const ST_PETE_DETAILS = {
 export default function StPetersburgPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema('st-petersburg')) }}
+      />
+
       {/* Hero */}
-      <section className="py-16 lg:py-24 bg-gradient-to-b from-sand-100 to-white">
+      <section className="page-hero bg-gradient-to-b from-sand-100 to-white">
         <div className="container-custom">
           <AnimatedSection className="max-w-3xl mx-auto text-center">
-            <span className="inline-block px-4 py-1 bg-terra-500/10 text-terra-500 rounded-full text-sm font-medium mb-4">
+            <span className="inline-block px-4 py-1 bg-terra-500/10 text-terra-700 rounded-full text-sm font-medium mb-4">
               St. Petersburg Location
             </span>
             <h1 className="font-heading text-4xl sm:text-5xl font-bold text-forest-900 mb-6">
@@ -133,6 +140,44 @@ export default function StPetersburgPage() {
               </AnimatedSection>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Local SEO content */}
+      <section className="py-16 lg:py-24 bg-white">
+        <div className="container-custom">
+          <AnimatedSection className="max-w-3xl mx-auto">
+            <h2 className="font-heading text-3xl font-bold text-forest-900 mb-6">
+              Sober Living in St. Petersburg, Florida
+            </h2>
+            <div className="space-y-4 text-olive-700 leading-relaxed">
+              <p>
+                Our St. Petersburg home at 1651 29th Ave N is where A New Beginning
+                started in 2015, and it&apos;s still the heart of what we do. The
+                house sits in a quiet residential neighborhood in Pinellas County
+                with a strong recovery community around it — daily AA and NA
+                meetings, sponsors, and sober activities are all close by. Residents
+                attend a recovery meeting every day, keep a 10:00 PM weekday curfew,
+                and complete random drug testing twice a week at no extra cost.
+              </p>
+              <p>
+                As a private-pay Florida non-profit, we keep admission simple: no
+                move-in fee, utilities included, and weekly or monthly payment
+                schedules. We accept residents on MAT (Suboxone or Naltrexone), and
+                men&apos;s and women&apos;s homes are separate. Same-day placement is
+                available for anyone who can arrive by 8:00 PM, with pickup from
+                detox, the airport, or jail when transportation is a barrier.
+              </p>
+              <p>
+                Hospitals, treatment centers, and case managers across Pinellas
+                County trust this home for step-down placement. Call{' '}
+                <a href="tel:+17272027307" className="text-terra-700 font-semibold hover:underline">
+                  (727) 202-7307
+                </a>{' '}
+                to check bed availability in St. Petersburg today.
+              </p>
+            </div>
+          </AnimatedSection>
         </div>
       </section>
 
